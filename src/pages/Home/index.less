@@ -1,0 +1,38 @@
+.container {
+  padding-top: 80px;
+}
+
+.bookList {
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  .bookItem {
+    flex: 0 0 20%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    min-width: 200px;
+    line-height: 1.5;
+    background: #fff;
+    > div {
+      margin-bottom: 10px;
+    }
+    .title {
+      
+    }
+    .author {
+    }
+    .date {
+
+    }
+    &:hover {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+  }
+}

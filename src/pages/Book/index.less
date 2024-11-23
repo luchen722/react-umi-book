@@ -1,0 +1,70 @@
+.active {
+  background: #b9b9b9!important;
+}
+
+.menu {
+  width: 200px;
+  border-right: 1px solid #ccc;
+  height: calc(100vh - 136px);
+  overflow: auto;
+  &::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #d5d5d5;
+    border-radius: 5px;
+  }
+}
+
+.menuItem {
+  cursor: pointer;
+  padding: 10px; 
+  text-align: left;
+  border-radius: 5px;
+  &:hover {
+    background: #dedede;
+  }
+}
+
+.content {
+  flex: 1;
+  height: calc(100vh - 136px);
+  padding-left: 32px;
+  background: var(-bg-color, #fff);
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--color-text, #000);
+  }
+  .contentWarp {
+    overflow: auto;
+    height: 100%;
+    * {
+      line-height: var(--line-height, 1.5);
+      color: var(--color-text, #000);
+      font-size: var(--font-size, 16px);
+      text-indent: 2em;
+    }
+    &::-webkit-scrollbar {
+      width: 5px;
+      height: 5px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: #d5d5d5;
+      border-radius: 5px;
+    }
+  }
+  img,image, svg,h1,h2,h3,h4,h5,h6 {
+    display: none;
+  }
+}
+.footer {
+  padding: 14px 0;
+  border-top: 1px solid #ccc;
+}
+.ant-pro-page-container-children-container {
+  padding-bottom: 0;
+}
